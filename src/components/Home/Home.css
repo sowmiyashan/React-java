@@ -1,0 +1,43 @@
+.home_pic{
+    position: absolute;
+    top: 0;
+	left: 0;
+    width: 100vw;
+	height: 40vw;
+}
+
+.home-over{
+	position: relative;
+	top:0;
+	background-color: rgba(0,0,0,0.3);
+	width: 100vw;
+	height: 40vw;
+}
+
+.navbar{
+	position:relative;
+	z-index: 1;
+	display: flex;
+	
+	justify-content: center;
+}
+/* .active_header_button{
+	text-decoration: none;
+} */
+
+.navlinks{
+	font-size: large;
+	color: #ffffff;
+	font-weight: bolder;
+	text-decoration: none;
+	margin: 2% 4% 2% 4%;
+}
+
+.navlinks:hover{
+	/* color: #cf9d6c; */
+	text-decoration: none;
+}
+
+/* .active_header_button{
+	color: #cf9d6c;
+} */
