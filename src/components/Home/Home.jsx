@@ -10,7 +10,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <nav className="navbar navbar-expand-sm bg-light justify-content-center navbar-light">
+                <nav className="container navbar navbar-expand-sm bg-light justify-content-center navbar-light">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <a className="nav-link" href="#">ROOMS</a>
@@ -35,7 +35,10 @@ class Home extends Component {
                         </li>
                     </ul>
                 </nav>
-                <img src="assets/home.webp" alt="home" className="home_pic"/>
+                <img src="assets/home.jpg" alt="home" className="home_pic col-sm-12 col-lg-12"/>
+                <div className="container search">
+
+                </div>
             </>
 
         );
