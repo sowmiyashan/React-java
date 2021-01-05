@@ -1,6 +1,6 @@
 .home_pic{
     position: absolute;
-    top: 0;
+    top: 8%;
 	left: 0;
     width: 100vw;
 	height: 40vw;
@@ -15,29 +15,12 @@
 }
 
 .navbar{
-	position:relative;
-	z-index: 1;
-	display: flex;
-	
-	justify-content: center;
-}
-/* .active_header_button{
-	text-decoration: none;
-} */
-
-.navlinks{
-	font-size: large;
-	color: #ffffff;
-	font-weight: bolder;
-	text-decoration: none;
-	margin: 2% 4% 2% 4%;
+	padding: 15px 0px;
 }
 
-.navlinks:hover{
-	/* color: #cf9d6c; */
-	text-decoration: none;
+.nav-item{
+	padding: 0px 30px;
+	color: gray;
+	font-size: 15px;
+	font-weight: bold;
 }
-
-/* .active_header_button{
-	color: #cf9d6c;
-} */
