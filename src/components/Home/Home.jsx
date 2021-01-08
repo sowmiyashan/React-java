@@ -54,7 +54,37 @@ class Home extends Component {
                 </nav> 
                 <img src="assets/home.jpg" alt="home" className="home_pic col-sm-12 col-lg-12"/>
                 <div className="container search">
+                    <div className="row">
+                        <div className="col-4">
+                            <h4>Check-In & Check-Out</h4>
+                            <a data-toggle="modal" href="#search" className="modal-s"><h4>22 Jan 2021 - 23 Jan 2021 <i className="fa fa-calendar icon"></i> </h4></a>
+                        </div>
+                        <div className="col-5">
+                            <h4>Rooms & Guests</h4>
+                            <a data-toggle="modal" href="#search" className="modal-s"><h4>Room 1-1 Guest,0 Child</h4></a>
+                        </div>
+                        <div className="col-3">
+                            <h4>Check-In & Check-Out</h4>
+                        </div>
+                    </div>        
+                </div>
+                <div className="modal" id="search">
+                    <div className="modal-dialog modal-lg modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
 
+                            <div className="modal-body">
+                                
+                            </div>
+
+                            <div className="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </>
 
