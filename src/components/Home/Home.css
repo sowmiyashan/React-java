@@ -32,19 +32,7 @@ a.nav-link:hover{
 	text-decoration: none;
 }
 
-a.modal-s{
-	color: white;
-	text-decoration: none;
-}
 
-a.modal-s:hover{
-	color: white;
-	text-decoration: none;
-}
-
-.icon{
-	padding-left:25px;
-}
 .nav-item{
 	padding: 0px 30px;
 	color: gray;
@@ -52,20 +40,12 @@ a.modal-s:hover{
 	font-weight: bold;
 }
 
-.search{
-	width:100%;
-	height: 70px;
-	background-color: 	#000000bf;
-	position: relative;
-	top:-70px;
-	left:0;
-	color: white;
-	font-family: 'Redressed', cursive;
-}
+
 
 .col-sm-12{
 	padding: 0px ;
 }
+
 
 
 @media only screen and (min-width: 992px){
