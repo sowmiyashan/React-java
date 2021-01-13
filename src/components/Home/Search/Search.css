@@ -10,7 +10,7 @@
 }
 
 a.modal-s{
-	color: white;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
 
@@ -105,4 +105,112 @@ button:focus{
 .final-stag{
 	position: relative;
 	top: 19px;
+}
+
+.tgl-s{
+	display: none;
+}
+
+.col-lg-6{
+	padding:0px 10px
+}
+
+.col-lg-8{
+	padding:0px 10px
+}
+
+@media only screen and (max-width:1199px){
+	.btn-bar{
+		width:210px
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.tgl-l{
+		display: none;
+	}
+
+	.tgl-s{
+		display: flex;
+	}
+
+	.icon{
+		padding: 15px 15px;
+	}
+
+	.final-stag{
+		top: 10px;
+		font-size: 20px;
+	}
+
+	.col-md-12{
+		padding-bottom: 20px;
+		padding-left: 10px;
+	}
+
+	.modal-f{
+		height:150px;
+	}
+
+	.button{
+		align-items: center;
+		height: 50px;
+		margin-left: 60px;
+	}
+
+	.add{
+		position: absolute;
+		background-color: wheat;
+		left: 0;
+		font-size: large;
+		width: auto;
+		border: 0;
+		height: 100%;
+	}
+
+}
+
+@media only screen and (max-width:450px){
+	.icon{
+		padding: 15px 5px;
+	}
+
+	.final-stag{
+		top: 10px;
+		font-size: 20px;
+	}
+
+	#from-date{
+		padding-left: 20px;
+		font-size: 25px;
+	}
+
+	.modal-l{
+		font-size: 15px;
+	}
+
+	.add{
+		position: absolute;
+		background-color: wheat;
+		left: 0;
+		width: auto;
+		font-size: large;
+		border: 0;
+		height: 100%;
+	}
+
+	.modal-f{
+		height:150px;
+	}
+
+	.col-12{
+		padding-bottom: 20px;
+		padding-left: 10px;
+	}
+
+	.button{
+		align-items: center;
+		height: 50px;
+		margin-left: 60px;
+	}
 }

@@ -20,8 +20,6 @@ class Home extends Component {
             isNavOpen: !this.state.isNavOpen
         })
     }
-
-
     
     render() {
 
@@ -29,6 +27,9 @@ class Home extends Component {
         return (
             <>
                 <nav className="container navbar navbar-expand-lg justify-content-center navbar-light">
+                    <a className="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="logo"  width="50px" height="50px"/>
+                    </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -43,9 +44,7 @@ class Home extends Component {
                             <li className="nav-item">
                                 <a className="nav-link" href="/">FACILITIES</a>
                             </li>
-                            <li className="nav-item">
-                                <img src="assets/logo.png" alt="logo" className="navbar-brand" width="50px" height="50px"/>
-                            </li>
+                            
                             <li className="nav-item">
                                 <a className="nav-link" href="/">GALLERY</a>
                             </li>
@@ -59,6 +58,7 @@ class Home extends Component {
                     </div>
                 </nav> 
                 <img src="assets/home.jpg" alt="home" className="home_pic col-sm-12 col-lg-12"/>
+                
                 <Search/>
             </>
 
