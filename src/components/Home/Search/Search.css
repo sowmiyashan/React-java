@@ -112,7 +112,7 @@ button:focus{
 }
 
 .col-lg-6{
-	padding:0px 10px
+	padding:0px 16px
 }
 
 .col-lg-8{
@@ -194,7 +194,7 @@ button:focus{
 		background-color: wheat;
 		left: 0;
 		width: auto;
-		font-size: large;
+		font-size: 17px;
 		border: 0;
 		height: 100%;
 	}
@@ -203,10 +203,10 @@ button:focus{
 		height:150px;
 	}
 
-	.col-12{
+	/* .col-12{
 		padding-bottom: 20px;
 		padding-left: 10px;
-	}
+	} */
 
 	.button{
 		align-items: center;

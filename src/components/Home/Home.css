@@ -56,9 +56,70 @@ a.nav-link:hover{
 	text-align: center;
 }
 
+.tag{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Redressed', cursive;
+}
+
+#more {display: none;}
+
+.safe{
+	background-color: wheat;
+	height: 100px;
+	margin: 0px 3px;
+}
+
+.safe>.col-lg-4>h3{
+	padding: 20px;
+	font-weight: bold;
+}
+
+.s-icon{
+	padding-top: 25px;
+}
+
+.s-title{
+	position: relative;
+	top:-12px;
+	padding-left: 10px;
+	font-size: large;
+}
+
+.h-c{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row{
+	font-family: 'Redressed', cursive;
+}
+
+.owl-theme .owl-nav {
+
+	display: none;
+}
+
+.owl-theme .owl-dots{
+	display: none;
+}
+
+.owl-item{
+	width: 400px;
+    margin-right: 10px;
+}
+	
+.item>.card{
+	height: 700px;
+}
+
+
 @media only screen and (min-width: 992px){
 	.modal-lg {
 		max-width: 700px;
+	}
+
+	.safe{
+		height: 110px;
 	}
 }
 
@@ -82,4 +143,18 @@ a.nav-link:hover{
 		justify-content: flex-end!important;
 		padding-right: 10px;
 	}
+
+	.safe{
+		height: 400px;
+	}
+
 }
+
+@media only screen and (max-width:450px){
+	.safe{
+		height: 400px;
+	}
+
+
+}
+

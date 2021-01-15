@@ -148,6 +148,7 @@ class Search extends Component {
                         </div>
                     </div>        
                 </div>
+
                 <div className="modal" id="search">
                     <div className="modal-dialog modal-lg modal-dialog-centered">
                         <div className="modal-content">
@@ -158,6 +159,7 @@ class Search extends Component {
 
                             <div className="modal-body">
                                 <br></br><br></br>
+                                
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="card bg-light text-dark">
                                         <div className="card-body ">
