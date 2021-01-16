@@ -252,7 +252,10 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
+                                            <br></br>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -277,6 +280,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -302,6 +306,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -327,6 +332,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -352,6 +358,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -378,6 +385,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -403,6 +411,7 @@ class Home extends Component {
                                         <div className="w3-display-bottomright">
                                             <p>Starting Rate/Night</p>
                                             <h5><i className="fa fa-inr"></i> 26,000*</h5>
+                                            <button type="button" class="btn btn-warning">View Details</button>
                                         </div>
                                     </div>
                                 </div>

@@ -282,8 +282,8 @@ class Search extends Component {
                                                             {moment(this.state.from).format("D MMM YYYY")} - {moment(this.state.to).format("D MMM YYYY")} | {this.state.Room.length} Room | {this.state.guest} Guests
                                                         </h5>
                                                     </div>
-                                                    <div className="col-sm-12 col-12 col-md-12 col-lg-4">
-                                                        <button type="submit" class="button btn btn-warning">Check Availability</button>
+                                                    <div className="w3-center col-sm-12 col-12 col-md-12 col-lg-4">
+                                                        <button type="submit" class="btn btn-warning">Check Availability</button>
                                                     </div>
                                                 </div>
                                             </div>
