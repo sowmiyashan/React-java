@@ -2,6 +2,7 @@ import './Home.css';
 import React, { Component } from 'react';
 import './Search/Search'
 import Search from './Search/Search';
+import {ROOM} from "../../shared/Room";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -231,194 +232,47 @@ class Home extends Component {
                     <br></br>
 
                     <OwlCarousel className="owl-theme"  {...options}>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room1.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Luxury Room Garden Non Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 2 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
+                        {
+                            ROOM.map((room)=>{
+                                return(
+                                    <div className="item" key={room.id}>
+                                        <div class="card bg-light text-dark h-c">
+                                            <div class="card-body">
+                                                <div>
+                                                    <img src={room.image} width="350" height="250"/>
+                                                </div>
+                                                <div className="w3-padding">
+                                                    <h3><b>{room.name}</b></h3>
+                                                    <h5>{room.description}</h5>
+                                                    <br></br>
+                                                    <h5><i className="fa fa-square-o"></i> {room.square}</h5>
+                                                    <h5><i className="fa fa-wifi"></i> {room.wifi}</h5>
+                                                    <h5><i className="fa fa-user"></i> {room.person}</h5>
+                                                    <h5><i className="fa fa-bed"></i> {room.bed}</h5>
 
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                            <br></br>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room2.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Luxury Room Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 2 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
+                                                    <div className="w3-display-bottomright">
+                                                        <p>Starting Rate/Night</p>
+                                                        <h5><i className="fa fa-inr"></i> {room.price} *</h5>
+                                                        <button type="button" class="btn btn-warning">View Details</button>
+                                                        <br></br>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room3.jpeg" width="350" height="250"/>
-                                    </div> 
-                                    <div className="w3-padding">
-                                        <h3><b>Palace Room Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 2 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room4.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Royal Suite 1 Bedroom Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 2 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room5.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Grand Royal Suite 1 Bedroom Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 2 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room6.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Grand Presidential Suite 1 Bedroom Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 3 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i> King/Twin</h5>
-                                        
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div class="card bg-light text-dark h-c">
-                                <div class="card-body">
-                                    <div>
-                                        <img src="assets/room7.jpeg" width="350" height="250"/>
-                                    </div>
-                                    <div className="w3-padding">
-                                        <h3><b>Historical 1 Bedroom Suite Lake View</b></h3>
-                                        <h5>
-                                            Luxury Rooms offer princely-inspired décor with stunning views of the Lily Pond. 
-                                            Each room is unique in size and is adorned with traditional Indian silks and dark teak furniture.
-                                        </h5>
-                                        <br></br>
-                                        <h5><i className="fa fa-square-o"></i> 21-33 Sq Mt</h5>
-                                        <h5><i className="fa fa-wifi"></i> Complimentary WiFi</h5>
-                                        <h5><i className="fa fa-user"></i> Upto 3 Guests</h5>
-                                        <h5><i className="fa fa-bed"></i>  King/Twin</h5>
-                                        <div className="w3-display-bottomright">
-                                            <p>Starting Rate/Night</p>
-                                            <h5><i className="fa fa-inr"></i> 26,000*</h5>
-                                            <button type="button" class="btn btn-warning">View Details</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                );
+                            })
+                        }
                     </OwlCarousel>
+                    <br></br>
+                    <div className="row">
+                         <h5>*Rates Exclusive of taxes</h5>
+                    </div>
+
                 </div>
+
+                
 
 
 
