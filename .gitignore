@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/.metadata
 /.pnp
 .pnp.js
 

@@ -1,0 +1,17 @@
+.r-p{
+    font-family: 'Redressed', cursive;
+}
+
+.bot-part{
+    position: relative;
+    top:20vh;
+}
+
+@media only screen and (max-width:450px){
+    .bot-part{
+        position: relative;
+        top:-2vh;
+        left:60vw    
+    }
+
+}
