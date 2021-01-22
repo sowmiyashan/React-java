@@ -76,15 +76,7 @@
 		position: relative;
 	}
 	
-	.home_pic{
-		height:80vw;
-		background-size: cover;
-	}
-	
-	.navbar{
-		justify-content: flex-end!important;
-		padding-right: 10px;
-	}
+
 
 	.safe{
 		height: 400px;

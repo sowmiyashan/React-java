@@ -7,11 +7,36 @@
     top:20vh;
 }
 
+.w3-display-bottomleft{
+    left:25px;
+    bottom: 27px;
+}
+
+.col-12{
+    padding-bottom: 10px ;
+}
+
+@media only screen and (max-width:992px){
+    .bot-part{
+        position: relative;
+        top:-2vh;
+        left:70vw    
+    }
+
+    .ph{
+        display: none;
+    }
+}
+
 @media only screen and (max-width:450px){
     .bot-part{
         position: relative;
         top:-2vh;
         left:60vw    
+    }
+
+    .ph{
+        display: none;
     }
 
 }

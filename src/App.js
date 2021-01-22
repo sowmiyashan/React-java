@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
-import Search from './components/Home/Search/Search';
+import Search from './components/Search/Search';
 import Room from './components/Room/Room';
 
 function App() {

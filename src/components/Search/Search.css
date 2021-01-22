@@ -84,6 +84,8 @@ button:focus{
 }
 
 .modal-f{
+	position: absolute;
+	bottom: 0;
 	height: 90px;
 	padding: 10px;
 	align-items: center;
@@ -104,7 +106,7 @@ button:focus{
 
 .final-stag{
 	position: relative;
-	top: 19px;
+	top: 25px;
 }
 
 .tgl-s{
@@ -117,6 +119,10 @@ button:focus{
 
 .col-lg-8{
 	padding:0px 10px
+}
+
+.c-2{
+	height: 60vh;
 }
 
 @media only screen and (max-width:1199px){
@@ -152,11 +158,11 @@ button:focus{
 		height:150px;
 	}
 
-	.button{
+	/* .button{
 		align-items: center;
 		height: 50px;
 		margin-left: 60px;
-	}
+	} */
 
 	.add{
 		position: absolute;
@@ -194,7 +200,7 @@ button:focus{
 		background-color: wheat;
 		left: 0;
 		width: auto;
-		font-size: 4wvw;
+		font-size: 4vw;
 		border: 0;
 		height: 100%;
 	}
@@ -208,9 +214,9 @@ button:focus{
 		padding-left: 10px;
 	} */
 
-	.button{
+	/* .button{
 		align-items: center;
 		height: 50px;
 		margin-left: 60px;
-	}
+	} */
 }

@@ -32,7 +32,7 @@ class Room extends Component {
                                 <div className="card bg-light text-dark">
                                     <div className="card-body">
                                         <div className="row">
-                                            <img src={room.image} alt="room1" height="300vh" className="col-md-4"/>
+                                            <img src={room.image} alt="room1" height="310vh" className="col-md-4"/>
                                             <div className="col-md-6 col-12">
                                                 <h2 className="w3-padding-16">{room.name}</h2>
                                                 <h5>{room.description}</h5>
@@ -46,16 +46,76 @@ class Room extends Component {
                                                         <h5><i className="fa fa-bed"></i> {room.bed}</h5>
                                                     </div>
                                                 </div>
+                                                {(window.screen.width < 993 ? <></> : 
+                                                    <div className="w3-padding-16 col-12">
+                                                        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target={'#'+room.id}>Room Details</button>
+                                                    </div>
+                                                )}
+                                               
                                                 
                                             </div>
                                             <div className="col-md-2 col-12">
+
+                                                {(window.screen.width > 993 ? <></> :
+                                                    <button type="button" class="w3-display-bottomleft btn btn-warning" data-toggle="collapse" data-target={'#'+room.id}>Room Details</button>
+                                                )}
+                                               
                                                 <div className="bot-part">
                                                     <p>Starting Rate/Night</p>
                                                     <h5><i className="fa fa-inr"></i> {room.price} *</h5>
-                                                    <button type="button" class="btn btn-warning">View Rates</button>
+                                                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target={'#'+room.name}>View Rates</button>
                                                     <br></br>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id={room.id} className="collapse">
+                                    <br/>
+                                    <div className="card bg-light text-dark">
+                                        <div className="card-body">
+                                            <div className="row w3-padding-large">
+                                                <div className="col-md-4">
+                                                    <h4><b>Room Details</b></h4>
+                                                    <h6>{room.description}</h6><br/>
+                                                    <h4><b>Size</b></h4><br/>
+                                                    <h6>{room.square}</h6><br/>
+                                                    <h4><b>Occupancy Details</b></h4>
+                                                    <h6>{room.person}</h6>
+                                                </div>
+                                                <div className="col-md-4 ph">
+                                                    <h4><b>Bed And Bath</b></h4>
+                                                    <h5>{room.description}</h5>
+                                                </div>
+                                                <div className="col-md-4 ph">
+                                                    <h4><b>Other Conveniences</b></h4>
+                                                    <h5>{room.description}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id={room.name} className="collapse">
+                                    <br/>
+                                    <div className="card bg-light text-dark">
+                                        <div className="card-body">
+                                            <div className="row w3-padding-large">
+                                                <div className="col-md-4 ">
+                                                    <h4><b>Best Available Rate</b></h4>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <h4><b>Rate description:</b></h4>
+                                                    <br/>
+                                                    <h6>Rate includes basic WiFi upto 4 devices. Applicable taxes Extra.</h6>
+                                                </div>
+                                                <div className="col-md-2">
+                                                    <p>Starting Rate/Night</p>
+                                                    <h5><i className="fa fa-inr"></i> {room.price} *</h5>
+                                                    <button type="button" class="btn btn-warning" >Select Room</button>
+                                                    <br></br>
+                                                </div>
+                                            </div>
+  
                                         </div>
                                     </div>
                                 </div>

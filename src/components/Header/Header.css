@@ -56,3 +56,15 @@ a.nav-link:hover{
 	text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+	.home_pic{
+		height:80vw;
+		background-size: cover;
+	}
+	
+		
+	.navbar{
+		justify-content: flex-end!important;
+		padding-right: 10px;
+	}
+}

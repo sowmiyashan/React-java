@@ -47,10 +47,11 @@ class Search extends Component {
 
     handleSubmit(event) {
         var rg = this.state.rg;
-        rg = rg+' | Room '+this.state.Room[1].room+'- '+this.state.Room[1].adult+' Guests, '+this.state.Room[1].children+' Child'
+        rg = rg+' | Room '+this.state.Room[1].room+'- '+this.state.Room[1].adult+' Guests, '+this.state.Room[1].children+' Child';
         this.setState({
             rg:rg
         })
+        console.log(this.state.rg);
 		event.preventDefault();
     }
 
@@ -158,8 +159,9 @@ class Search extends Component {
                             </div>
 
                             <div className="modal-body">
-                                <br></br><br></br>
                                 
+                                <h1 className="tag">SunShine Lake Palace</h1>
+                                <br/>
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="card bg-light text-dark">
                                         <div className="card-body ">
@@ -190,7 +192,7 @@ class Search extends Component {
                                         </div>
                                     </div>
                                     <br></br><br></br>
-                                    <div className="card bg-light text-dark">
+                                    <div className="card bg-light text-dark c-2">
                                         <div className="card-body">
                                             <ul className="nav nav-tabs " role="tablist"> 
                                                 <li className="nav-item modal-l a-r col-4">
@@ -283,7 +285,7 @@ class Search extends Component {
                                                         </h5>
                                                     </div>
                                                     <div className="w3-center col-sm-12 col-12 col-md-12 col-lg-4">
-                                                        <button type="submit" class="btn btn-warning">Check Availability</button>
+                                                        <button type="submit" class="button btn btn-warning">Check Availability</button>
                                                     </div>
                                                 </div>
                                             </div>
