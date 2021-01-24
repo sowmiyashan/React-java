@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import Search from './components/Search/Search';
 import Room from './components/Room/Room';
+import Dining from './components/Dining/Dining';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/rooms" component={Room}/>
+				<Route exact path="/dining" component={Dining}/>
 			</Switch>
 		</Router>
   	);

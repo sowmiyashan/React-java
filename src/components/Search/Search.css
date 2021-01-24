@@ -6,7 +6,7 @@
 	top:-70px;
 	left:0;
 	color: white;
-	font-family: 'Redressed', cursive;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 a.modal-s{
@@ -41,7 +41,7 @@ button:focus{
 
 
 .card{
-	font-family: 'Redressed', cursive;
+	font-family: 'Fira Sans', sans-serif;
 	justify-content: center;
 }
 

@@ -76,16 +76,16 @@ class Home extends Component {
 
                         <div className="row safe">
                             <div className="col-lg-4 col-12 ">
-                                <h3 className="w3-center">Safeness - A Commitment <br></br> Restrengthened</h3>
+                                <h4 className="w3-padding-16 w3-center">Safeness - A Commitment <br></br> Restrengthened</h4>
                             </div>
                             <div className="col-lg-3 col-12 col-sm-6">
-                                <h6 ><i class="fa fa-shield fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Renewed Safety Protocol</span></h6>
+                                <p ><i class="fa fa-shield fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Renewed Safety Protocol</span></p>
                             </div>
                             <div className="col-lg-3 col-12 col-sm-6">
-                                <h6 ><i class="fa fa-laptop fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Contactless Technology</span></h6>
+                                <p ><i class="fa fa-laptop fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Contactless Technology</span></p>
                             </div>
                             <div className="col-lg-2 col-12 w3-padding-32 w3-center">
-                                <h4><a>Learn More...</a></h4>
+                                <h4><a href="/">Learn More...</a></h4>
                             </div>
                             
                         </div>
@@ -99,12 +99,12 @@ class Home extends Component {
                             <li><i class="fa-li fa fa-envelope-o"></i>SunShine@gmail.com</li>
                         </ul>
                         <br></br>
-                        <h5>
+                        <h5 >
                             The young Prince, Maharana Jagat Singh requested his father, Maharana Sangram Singh II, 
                             if he could reside in the pleasure palace Jagmandir with his ladies. The Maharana did not give permission, 
-                            but <span id="dots">...</span><span id="more">taunted his son that if he was so keen to stay in an Island Palace, why doesn't he build one for himself. 
+                            but taunted his son that if he was so keen to stay in an Island Palace, why doesn't he build one for himself. 
                             It is this taunt that led to him building his own pleasure palace on Lake Pichola in the year 1743. 
-                            The Maharana (ruler) called this palace which he finished building in 1746, Jag Niwas. 
+                            {/* The Maharana (ruler) called this palace which he finished building in 1746, Jag Niwas. 
                             Jag Niwas is today the majestic and magnificent Taj Lake Palace of Udaipur.  Restored to its pristine glory, 
                             this spectacular palace became world renowned when the James Bond film ‘Octopussy’ was filmed at it. 
                             It was the secluded lair of the film’s eponymous Bond Girl. This heritage hotel in Udaipur has 65 luxurious 
@@ -123,9 +123,9 @@ class Home extends Component {
                             And  this most romantic of hotels, is the ideal venue for fairytale weddings and magical honeymoons. 
                             Known as the Venice of the East, the city of Udaipur, with its elaborate palaces, serene lakes, exotic temples
                             and resplendent gardens, has a lot to offer. Our concierge would be happy to assist you in making arrangements, 
-                            and plan a special tour of the city of lakes in one of our vintage cars.</span>
+                            and plan a special tour of the city of lakes in one of our vintage cars.</span> */}
                         </h5>
-                        <button onClick={this.myFunction} id="myBtn">Read more</button>
+                        {/* <button onClick={this.myFunction} id="myBtn">Read more</button> */}
                         <br></br><br></br>
                         <div className="row">
                             <div className="col-lg-6">
@@ -151,7 +151,7 @@ class Home extends Component {
                             </div>
                             <br></br>
                             <div className="col-lg-6">
-                                <img src="assets/pic1.jpeg" height="90%" width="100%"/>
+                                <img src="assets/pic1.jpeg" alt="pic1" height="90%" width="100%"/>
                             </div>
                         </div>
 
@@ -160,7 +160,7 @@ class Home extends Component {
                         <div className="row">
 
                             <div className="col-lg-6">
-                                <img src="assets/pic3.jpeg" height="100%" width="100%"/>
+                                <img src="assets/pic3.jpeg" alt="pic3" height="100%" width="100%"/>
                             </div>
                             <br></br>
                             <div className="col-lg-6">
@@ -188,7 +188,7 @@ class Home extends Component {
                             <h1 className="tag">Guest Rooms</h1>
                         </div>
                         <div className="col-lg-2 col-5 w3-padding-16 ">
-                            <h4><a>Learn More...</a></h4>
+                            <h4><a href="/rooms">Learn More...</a></h4>
                         </div>
                     </div>
 
@@ -202,7 +202,7 @@ class Home extends Component {
                                         <div class="card bg-light text-dark h-c">
                                             <div class="card-body">
                                                 <div>
-                                                    <img src={room.image} width="350" height="250"/>
+                                                    <img src={room.image} alt={room.name} width="350" height="250"/>
                                                 </div>
                                                 <div className="w3-padding">
                                                     <h3><b>{room.name}</b></h3>

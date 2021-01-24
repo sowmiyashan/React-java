@@ -11,7 +11,7 @@ class Room extends Component {
                 <br/><br/>
                 <div className="row safe">
                     <div className="col-lg-4 col-12 ">
-                        <h3 className="w3-center">Safeness - A Commitment <br></br> Restrengthened</h3>
+                        <h4 className="w3-padding-24 w3-center">Safeness - A Commitment <br></br> Restrengthened</h4>
                     </div>
                     <div className="col-lg-3 col-12 col-sm-6">
                         <h6 ><i class="fa fa-shield fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Renewed Safety Protocol</span></h6>
@@ -20,7 +20,7 @@ class Room extends Component {
                         <h6 ><i class="fa fa-laptop fa-3x s-icon" aria-hidden="true"></i><span className="s-title">Contactless Technology</span></h6>
                     </div>
                     <div className="col-lg-2 col-12 w3-padding-32 w3-center">
-                        <h4><a>Learn More...</a></h4>
+                        <h4><a href="/">Learn More...</a></h4>
                     </div>
                 </div>
                 <br/><br/>
@@ -32,7 +32,7 @@ class Room extends Component {
                                 <div className="card bg-light text-dark">
                                     <div className="card-body">
                                         <div className="row">
-                                            <img src={room.image} alt="room1" height="310vh" className="col-md-4"/>
+                                            <img src={room.image} alt="room1" height="317vh" className="col-md-4"/>
                                             <div className="col-md-6 col-12">
                                                 <h2 className="w3-padding-16">{room.name}</h2>
                                                 <h5>{room.description}</h5>
